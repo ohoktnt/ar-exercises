@@ -10,3 +10,12 @@ puts "Exercise 7"
 puts "----------"
 
 # Your code goes here ...
+
+store_name = @store1.name
+
+puts store_name
+
+@another_store = Store.create(name: store_name)
+@another_store.save
+
+puts @another_store.errors.full_messages
